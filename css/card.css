@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.challenge {
+    background-color: #0d1a2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.challenge .card {
+    width: 320px;
+    height: 545px;
+    background-color: #15273f;
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0 20px 10px 20px #0c1729, 0 5px 14px 50px #0c192c;
+}
+
+.challenge .card .image {
+    position: relative;
+}
+
+.challenge .card .image i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 35px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    display: none;
+    color: #fff;
+}
+
+.challenge .card .image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 3px);
+    background-color: #2bfbff96;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: none;
+}
+
+.challenge .card .image:hover::before,
+.challenge .card .image:hover i {
+    display: block;
+    cursor: pointer;
+}
+
+.challenge .card .image img {
+    max-width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.challenge .card h3 {
+    color: #ffffff;
+}
+
+.challenge .card h3:hover {
+    color: #2bfbff;
+    cursor: pointer;
+}
+
+.challenge .card p {
+    color: #859cbc;
+    line-height: 1.5;
+}
+
+.challenge .card .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.challenge .card .flex .one {
+    display: flex;
+    align-items: center;
+}
+
+.challenge .card .flex .one div:first-child {
+    margin-right: 5px;
+    color: #2bfbff;
+}
+
+.challenge .card .flex .one div:last-child {
+    color: #2bfbff;
+}
+
+.challenge .card .flex .two {
+    display: flex;
+}
+
+.challenge .card .flex .two div:first-child {
+    margin-right: 7px;
+}
+
+.challenge .card .flex .two div:first-child i {
+    font-size: 14px;
+}
+
+.challenge .card .flex div:last-of-type {
+    color: #859cbc;
+}
+
+.challenge .card .creat {
+    border-top: 1px solid #2f4159;
+    padding: 20px 0;
+    color: #829ab6;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.challenge .card .creat img {
+    width: 30px;
+    margin-right: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.challenge .card .creat span {
+    color: #ffffff;
+}
+
+.challenge .card .creat span:hover {
+    color: #2bfbff;
+    cursor: pointer;
+}
